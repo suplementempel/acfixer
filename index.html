@@ -6,6 +6,25 @@
     <title>AC-Fixer - Jasa Service AC Bergaransi Jabotabek</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Mengompensasi tinggi navbar saat scroll otomatis menggunakan ID */
+        section {
+            scroll-margin-top: 5rem; /* Setara dengan h-20 atau 80px tinggi navbar */
+        }
+        #hero {
+            scroll-margin-top: 0px; /* Khusus hero dibikin 0 agar bisa mentok ke paling atas */
+        } 
+        @keyframes bounceSlow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+        .animate-bounce-slow {
+            animation: bounceSlow 3s infinite ease-in-out;
+        }
+        .animate-spin-slow {
+            animation: spin 8s linear infinite;
+        }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased font-sans">
 
@@ -196,18 +215,7 @@
         <span class="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-30 animate-ping -z-10"></span>
     </a>
 
-    <style>
-        @keyframes bounceSlow {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-6px); }
-        }
-        .animate-bounce-slow {
-            animation: bounceSlow 3s infinite ease-in-out;
-        }
-        .animate-spin-slow {
-            animation: spin 8s linear infinite;
-        }
-    </style>
+
     
     <script>
         const hamburgerBtn = document.getElementById('hamburger-btn');
@@ -228,30 +236,34 @@
 
         hamburgerBtn.addEventListener('click', toggleMenu);
 
-        // Script Paksa Smooth Scroll & Cegah Tab Baru (Prevent Default)
+      // Scroll Akurat & Menghilangkan Konflik Tab Baru
         allNavLinks.forEach(link => {
             link.addEventListener('click', function(e) {
                 const targetId = this.getAttribute('href');
                 
-                // Pastikan tautan diawali tanda pagar (#) untuk navigasi internal
                 if (targetId.startsWith('#')) {
-                    e.preventDefault(); // Menghentikan perilaku default browser membuka tab baru
+                    e.preventDefault();
                     
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        // Melakukan scroll dengan presisi posisi dikurangi tinggi navbar sticky (~80px)
-                        const navbarHeight = 80;
-                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
-                        
+                    // JIKA MENGKLIK HOME (#hero), PAKSA MENTOK HINGGA TITIK 0 TERATAS BROWSER
+                    if (targetId === '#hero') {
                         window.scrollTo({
-                            top: targetPosition,
+                            top: 0,
                             behavior: 'smooth'
                         });
-
-                        // Jika diklik melalui menu mobile HP, otomatis tutup panel menunya
-                        if (!mobileMenu.classList.contains('hidden')) {
-                            toggleMenu();
+                    } else {
+                        // Untuk seksi lain, target diposisikan seimbang memanfaatkan CSS 'scroll-margin-top'
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
                         }
+                    }
+
+                    // Otomatis menutup panel menu jika sedang membuka di HP
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        toggleMenu();
                     }
                 }
             });
