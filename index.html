@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC-Fixer - Jasa Service AC Bergaransi Jabotabek</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased font-sans">
+
+    <nav class="sticky top-0 bg-white shadow-md z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#hero" class="nav-link text-xl font-bold text-blue-600 flex items-center gap-2">
+                <i class="fa-solid fa-snowflake animate-spin-slow"></i> AC-Fixer
+            </a>
+            
+            <div class="hidden md:flex gap-8 font-medium text-gray-700">
+                <a href="#hero" class="nav-link hover:text-blue-600 transition">Home</a>
+                <a href="#layanan" class="nav-link hover:text-blue-600 transition">Layanan</a>
+                <a href="#testimoni" class="nav-link hover:text-blue-600 transition">Testimoni</a>
+            </div>
+
+            <button id="hamburger-btn" class="block md:hidden text-gray-700 hover:text-blue-600 focus:outline-none text-2xl" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-inner">
+            <div class="flex flex-col px-4 py-3 space-y-3 font-medium text-gray-700">
+                <a href="#hero" class="nav-link mobile-link hover:text-blue-600 py-2 transition">Home</a>
+                <a href="#layanan" class="nav-link mobile-link hover:text-blue-600 py-2 transition">Layanan</a>
+                <a href="#testimoni" class="nav-link mobile-link hover:text-blue-600 py-2 transition">Testimoni</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="pt-16 pb-16 md:pt-28 md:pb-24 bg-gradient-to-b from-blue-50 to-white px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 text-center md:text-left">
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Penyedia Jasa AC Terpercaya</span>
+                <h1 class="text-3xl md:text-6xl font-extrabold text-gray-900 tracking-tight mt-4 mb-6 leading-tight">
+                    AC Rumah Anda Panas? <br><span class="text-blue-600">Kami Siap Buat Dingin Kembali!</span>
+                </h1>
+                <p class="text-base md:text-lg text-gray-600 mb-8 max-w-2xl mx-auto md:mx-0">
+                    Layanan cuci AC, perbaikan, bongkar pasang, dan tambah freon cepat, profesional, dan bergaransi untuk wilayah Anda.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                    <a href="https://wa.me/6282125032131?text=Halo%20AC-Fixer,%20saya%20mau%20pesan%20jasa%20cuci%20AC" 
+                       target="_blank" rel="noopener noreferrer"
+                       class="bg-green-500 hover:bg-green-600 text-white font-bold px-6 py-3.5 md:px-8 md:py-4 rounded-xl shadow-lg shadow-green-500/30 transition flex items-center justify-center gap-2 text-base md:text-lg">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Pesan Jasa Sekarang
+                    </a>
+                    <a href="#layanan" class="nav-link bg-white hover:bg-gray-100 text-gray-700 font-semibold px-6 py-3.5 md:px-8 md:py-4 rounded-xl border border-gray-300 transition text-sm md:text-base">
+                        Lihat Daftar Layanan
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1 w-full max-w-md md:max-w-full mx-auto">
+                <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782575373/jxwqMNJNG_fvyjrw.webp" alt="Teknisi AC Professional Sedang Bekerja di Luar Ruangan" class="w-full h-auto rounded-3xl shadow-2xl shadow-blue-500/10 object-cover aspect-[4/3] md:aspect-auto">
+            </div>
+        </div>
+    </section>
+
+    <section id="layanan" class="py-20 bg-white px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">Layanan Jasa</h2>
+                <p class="text-gray-500">Transparansi proses service kami untuk menjamin kualitas terbaik.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div class="bg-gray-50 p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:shadow-lg transition">
+                    <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782574117/cuci_20AC_oabzzy.jpg" alt="Proses Cuci AC Steam" class="w-full h-32 rounded-lg object-cover mb-4">
+                    <h3 class="text-sm font-bold text-gray-900 mb-2">Cuci AC Rutin & Steam</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed flex-grow">Pembersihan unit indoor & outdoor menggunakan mesin steam bertekanan tinggi untuk merontokkan debu membandel dan jamur.</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:shadow-lg transition">
+                    <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782574763/IMG_2247_cj3ypm.jpg" alt="Pengecekan Tekanan Freon" class="w-full h-32 rounded-lg object-cover mb-4">
+                    <h3 class="text-sm font-bold text-gray-900 mb-2">Pengecekan Freon & Isi Ulang</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed flex-grow">Pemeriksaan tekanan freon menggunakan manifold gauge untuk memastikan kecukupan refrigrant R32/R410 sesuai standar pabrikan.</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:shadow-lg transition">
+                    <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782574783/Screenshot_From_2026-06-27_22-39-09_c630gh.png" alt="Perbaikan Kebocoran Air AC" class="w-full h-32 rounded-lg object-cover mb-4">
+                    <h3 class="text-sm font-bold text-gray-900 mb-2">Perbaikan Kebocoran Air</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed flex-grow">Penanganan AC bocor air (tetesan indoor) dengan membersihkan saluran pembuangan yang tersumbat lendir atau kotoran.</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:shadow-lg transition">
+                    <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782575048/memilih_sparepart_ac_281_29-640w_sjuzkm.jpg" alt="Penggantian Kompresor AC" class="w-full h-32 rounded-lg object-cover mb-4">
+                    <h3 class="text-sm font-bold text-gray-900 mb-2">Penggantian Kompresor & Suku Cadang</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed flex-grow">Diagnosis dan penggantian komponen vital yang gagal, seperti kompresor, kapasitor, atau modul sensor, menggunakan part original/kompatibel.</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:shadow-lg transition">
+                    <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782574985/6234647eca283fbf3010ebe4d557a5ac_veiawa.jpg" alt="Instalasi AC Baru di Dinding" class="w-full h-32 rounded-lg object-cover mb-4">
+                    <h3 class="text-sm font-bold text-gray-900 mb-2">Bongkar Pasang & Instalasi Baru</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed flex-grow">Jasa pemindahan AC atau instalasi unit baru dengan memperhatikan tata letak estetis, *flaring* pipa yang presisi, dan pemakuman sistem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimoni" class="py-20 bg-gray-50 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-2">Apa Kata Mereka?</h2>
+                <p class="text-gray-500">Ulasan asli dari pelanggan rumah tangga dan kantor yang telah menggunakan jasa kami.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-3 gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic">"Pengerjaannya sangat rapi. Biasanya habis cuci AC lantai berantakan, tapi teknisi AC-Fixer bawa kelengkapan sendiri dan bersihin sisa pengerjaan sampai bersih lagi. AC langsung dingin banget!"</p>
+                    </div>
+                    <div class="mt-4 border-t border-gray-100 pt-3 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-600 text-sm">R</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-900">Rian Hidayat</h4>
+                            <p class="text-[10px] text-gray-400">Pemilik Rumah - Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-3 gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic">"AC kantor sering bocor air tengah hari, panggil AC-Fixer responnya cepat langsung meluncur. Ternyata ada penyumbatan di pipa dalam. Harganya jujur sesuai estimasi awal."</p>
+                    </div>
+                    <div class="mt-4 border-t border-gray-100 pt-3 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center font-bold text-green-600 text-sm">A</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-900">Amalia Putri</h4>
+                            <p class="text-[10px] text-gray-400">Purchasing Perusahaan - Tangerang</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-3 gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 text-sm italic">"Sangat terbantu dengan garansi pengerjaannya. Kemarin sempat ganti kapasitor outdoor dan dikasih jaminan pengerjaan 30 hari. Berbisnis dengan UMKM lokal jadi merasa aman."</p>
+                    </div>
+                    <div class="mt-4 border-t border-gray-100 pt-3 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center font-bold text-purple-600 text-sm">H</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-900">Hendro Wicaksono</h4>
+                            <p class="text-[10px] text-gray-400">Apartemen Medit - Bekasi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 pt-12 pb-6 px-4 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <a href="#hero" class="nav-link text-xl font-bold text-white flex items-center gap-2 mb-4">
+                    <i class="fa-solid fa-snowflake text-blue-500"></i> AC-Fixer
+                </a>
+                <p class="text-xs text-gray-400 leading-relaxed">
+                    Kami penyedia solusi perbaikan dan perawatan AC terpercaya khusus wilayah Jabodetabek. Mengutamakan kepuasan pelanggan, transparansi harga, dan ketepatan waktu.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Tautan Navigasi</h4>
+                <div class="flex flex-col gap-2 text-xs">
+                    <a href="#hero" class="nav-link hover:text-blue-400 transition">Home Utama</a>
+                    <a href="#layanan" class="nav-link hover:text-blue-400 transition">Detail Layanan Jasa</a>
+                    <a href="#testimoni" class="nav-link hover:text-blue-400 transition">Testimoni Pelanggan</a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Kontak & Area Operasional</h4>
+                <p class="text-xs text-gray-400 mb-2"><i class="fa-solid fa-location-dot text-blue-500 mr-2"></i> Melayani Seluruh Area Jabodetabek</p>
+                <p class="text-xs text-gray-400"><i class="fa-solid fa-clock text-blue-500 mr-2"></i> Senin - Minggu (08:00 - 18:00 WIB)</p>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+            <p>&copy; 2026 AC-Fixer. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/6282125032131?text=Halo%20AC-Fixer,%20saya%20ingin%20konsultasi%20mengenai%20service%20AC" 
+       target="_blank"
+       rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 z-50 bg-green-500 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 active:scale-95 transition-all duration-300 animate-bounce-slow"
+       title="Hubungi Kami Via WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-30 animate-ping -z-10"></span>
+    </a>
+
+    <style>
+        @keyframes bounceSlow {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
+        }
+        .animate-bounce-slow {
+            animation: bounceSlow 3s infinite ease-in-out;
+        }
+        .animate-spin-slow {
+            animation: spin 8s linear infinite;
+        }
+    </style>
+    
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        const allNavLinks = document.querySelectorAll('.nav-link');
+
+        // Fungsi Buka/Tutup Hamburger Menu
+        function toggleMenu() {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                hamburgerIcon.className = 'fa-solid fa-bars';
+            } else {
+                hamburgerIcon.className = 'fa-solid fa-xmark';
+            }
+        }
+
+        hamburgerBtn.addEventListener('click', toggleMenu);
+
+        // Script Paksa Smooth Scroll & Cegah Tab Baru (Prevent Default)
+        allNavLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                
+                // Pastikan tautan diawali tanda pagar (#) untuk navigasi internal
+                if (targetId.startsWith('#')) {
+                    e.preventDefault(); // Menghentikan perilaku default browser membuka tab baru
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        // Melakukan scroll dengan presisi posisi dikurangi tinggi navbar sticky (~80px)
+                        const navbarHeight = 80;
+                        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+
+                        // Jika diklik melalui menu mobile HP, otomatis tutup panel menunya
+                        if (!mobileMenu.classList.contains('hidden')) {
+                            toggleMenu();
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
