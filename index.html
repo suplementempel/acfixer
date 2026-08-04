@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AC-Fixer - Jasa Service AC Bergaransi Jabotabek</title>
+    <title>Covin Service - Jasa Service AC & Kulkas Bekasi</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -25,18 +25,25 @@
             animation: spin 8s linear infinite;
         }
     </style>
+      <!-- Swiper.js CSS (Untuk Carousel Foto) -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased font-sans">
 
     <nav class="sticky top-0 bg-white shadow-md z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="#hero" class="nav-link text-xl font-bold text-blue-600 flex items-center gap-2">
-                <i class="fa-solid fa-snowflake animate-spin-slow"></i> AC-Fixer
+                <img 
+        src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1785813958/logo_j55n8x.jpg" 
+        alt="Logo Covin Service" 
+        class="w-10 h-10 rounded-full animate-spin-slow shrink-0 object-contain"
+    /> Covin Service
             </a>
             
             <div class="hidden md:flex gap-8 font-medium text-gray-700">
                 <a href="#hero" class="nav-link hover:text-blue-600 transition">Home</a>
                 <a href="#layanan" class="nav-link hover:text-blue-600 transition">Layanan</a>
+                <a href="#dokumentasi" class="nav-link hover:text-blue-600 transition">Dokumentasi</a>                
                 <a href="#testimoni" class="nav-link hover:text-blue-600 transition">Testimoni</a>
             </div>
 
@@ -49,6 +56,7 @@
             <div class="flex flex-col px-4 py-3 space-y-3 font-medium text-gray-700">
                 <a href="#hero" class="nav-link mobile-link hover:text-blue-600 py-2 transition">Home</a>
                 <a href="#layanan" class="nav-link mobile-link hover:text-blue-600 py-2 transition">Layanan</a>
+                <a href="#dokumentasi" class="nav-link mobile-link hover:text-blue-600 py-2 transition">Dokumentasi</a>
                 <a href="#testimoni" class="nav-link mobile-link hover:text-blue-600 py-2 transition">Testimoni</a>
             </div>
         </div>
@@ -57,12 +65,12 @@
     <section id="hero" class="pt-16 pb-16 md:pt-28 md:pb-24 bg-cyan-200 px-4">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
             <div class="flex-1 text-center md:text-left">
-                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Penyedia Jasa AC Terpercaya</span>
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider">Penyedia Jasa Sevice AC & Kulkas Terpercaya</span>
                 <h1 class="text-3xl md:text-6xl font-extrabold text-gray-900 tracking-tight mt-4 mb-6 leading-tight">
-                    AC Rumah Anda Panas? <br><span class="text-blue-600">Kami Siap Buat Dingin Kembali!</span>
+                    AC Rumah Anda Panas? Kulkas Kurang Dingin?<br><span class="text-blue-600">Kami Siap Buat Dingin Kembali!</span>
                 </h1>
                 <p class="text-base md:text-lg text-gray-600 mb-8 max-w-2xl mx-auto md:mx-0">
-                    Layanan cuci AC, perbaikan, bongkar pasang, dan tambah freon cepat, profesional, dan bergaransi untuk wilayah Anda.
+                    Layanan service AC maupun kulkas, perbaikan, bongkar pasang, dan tambah freon cepat, profesional, dan bergaransi untuk wilayah Anda.
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
                     <a href="https://wa.me/6282125032131?text=Halo%20AC-Fixer,%20saya%20mau%20pesan%20jasa%20cuci%20AC" 
@@ -76,7 +84,7 @@
                 </div>
             </div>
             <div class="flex-1 w-full max-w-md md:max-w-full mx-auto">
-                <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782575373/jxwqMNJNG_fvyjrw.webp" alt="Teknisi AC Professional Sedang Bekerja di Luar Ruangan" class="w-full h-auto rounded-3xl shadow-2xl shadow-blue-500/10 object-cover aspect-[4/3] md:aspect-auto">
+                <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1785812293/cek_indoor_hhhwul.jpg" alt="Teknisi AC" class="w-full h-90 rounded-3xl shadow-2xl shadow-blue-500/10 object-cover aspect-[4/3] md:aspect-auto">
             </div>
         </div>
     </section>
@@ -88,34 +96,141 @@
                 <p class="text-gray-500">Transparansi proses service kami untuk menjamin kualitas terbaik.</p>
             </div>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div class="bg-gray-50 p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:shadow-lg transition">
                     <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782574117/cuci_20AC_oabzzy.jpg" alt="Proses Cuci AC Steam" class="w-full h-32 rounded-lg object-cover mb-4">
                     <h3 class="text-sm font-bold text-gray-900 mb-2">Cuci AC Rutin & Steam</h3>
                     <p class="text-xs text-gray-600 leading-relaxed flex-grow">Pembersihan unit indoor & outdoor menggunakan mesin steam bertekanan tinggi untuk merontokkan debu membandel dan jamur.</p>
                 </div>
-                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:shadow-lg transition">
+                <div class="bg-gray-50 p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:shadow-lg transition">
                     <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782574763/IMG_2247_cj3ypm.jpg" alt="Pengecekan Tekanan Freon" class="w-full h-32 rounded-lg object-cover mb-4">
                     <h3 class="text-sm font-bold text-gray-900 mb-2">Pengecekan Freon & Isi Ulang</h3>
                     <p class="text-xs text-gray-600 leading-relaxed flex-grow">Pemeriksaan tekanan freon menggunakan manifold gauge untuk memastikan kecukupan refrigrant R32/R410 sesuai standar pabrikan.</p>
                 </div>
-                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:shadow-lg transition">
+                <div class="bg-gray-50 p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:shadow-lg transition">
                     <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782574783/Screenshot_From_2026-06-27_22-39-09_c630gh.png" alt="Perbaikan Kebocoran Air AC" class="w-full h-32 rounded-lg object-cover mb-4">
-                    <h3 class="text-sm font-bold text-gray-900 mb-2">Perbaikan Kebocoran Air</h3>
+                    <h3 class="text-sm font-bold text-gray-900 mb-2">Perbaikan Kebocoran</h3>
                     <p class="text-xs text-gray-600 leading-relaxed flex-grow">Penanganan kebocoran freon unit outdoor, indoor, serta sistem perpipaan.</p>
                 </div>
-                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:shadow-lg transition">
+                <div class="bg-gray-50 p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:shadow-lg transition">
                     <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782575048/memilih_sparepart_ac_281_29-640w_sjuzkm.jpg" alt="Penggantian Kompresor AC" class="w-full h-32 rounded-lg object-cover mb-4">
                     <h3 class="text-sm font-bold text-gray-900 mb-2">Penggantian Kompresor & Suku Cadang</h3>
                     <p class="text-xs text-gray-600 leading-relaxed flex-grow">Diagnosis dan penggantian komponen vital yang gagal, seperti kompresor, kapasitor, atau modul sensor, menggunakan part original/kompatibel.</p>
                 </div>
-                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:shadow-lg transition">
+                <div class="bg-gray-50 p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:shadow-lg transition">
                     <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782574985/6234647eca283fbf3010ebe4d557a5ac_veiawa.jpg" alt="Instalasi AC Baru di Dinding" class="w-full h-32 rounded-lg object-cover mb-4">
                     <h3 class="text-sm font-bold text-gray-900 mb-2">Bongkar Pasang & Instalasi Baru</h3>
                     <p class="text-xs text-gray-600 leading-relaxed flex-grow">Jasa pemindahan AC atau instalasi unit baru dengan memperhatikan tata letak estetis, *flaring* pipa yang presisi, dan pemakuman sistem.</p>
                 </div>
+                <div class="bg-gray-50 p-5 rounded-2xl shadow-sm border border-gray-100 flex flex-col hover:shadow-lg transition">
+                    <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1785818959/perbaiki-kulkas_xumjll.jpg" alt="Perbaikan kulkas" class="w-full h-32 rounded-lg object-cover mb-4">
+                    <h3 class="text-sm font-bold text-gray-900 mb-2">Service/perbaikan kulkas</h3>
+                    <p class="text-xs text-gray-600 leading-relaxed flex-grow">Perbaikan kulkas, freezer, & cool storage</p>
+                </div>
             </div>
         </div>
+    </section>
+    
+    <section id="dokumentasi" class="py-20 bg-white px-4">
+      <!-- SECTION DOKUMENTASI -->
+  <section class="max-w-6xl mx-auto px-4 py-12 space-y-16">
+    
+    <!-- HEADER SECTION -->
+    <div class="text-center max-w-2xl mx-auto space-y-3">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900">Dokumentasi Pekerjaan</h2>
+      <p class="text-slate-600">Bukti hasil pengerjaan tim teknisi kami di lapangan secara langsung dan profesional.</p>
+    </div>
+
+    <!-- 1. GALERI FOTO (CAROUSEL FIX HEIGHT) -->
+    <div class="space-y-4">
+      <div class="flex items-center justify-between">
+        <h3 class="text-xl font-semibold text-slate-800 flex items-center gap-2">
+          <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          Galeri Foto Pengerjaan
+        </h3>
+        <p class="text-sm text-slate-500 hidden sm:block">Swipe / geser untuk melihat foto lain</p>
+      </div>
+
+      <!-- Swiper Slider Container -->
+      <div class="relative group rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900">
+        <div class="swiper mySwiper w-full h-[320px] sm:h-[420px] md:h-[500px]">
+          <div class="swiper-wrapper">
+            
+            <!-- Slide 1 (Latar Foto 4:3) -->
+            <div class="swiper-slide flex items-center justify-center bg-slate-950">
+              <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1785812294/bocor_evap_fheemn.jpg?auto=format&fit=crop&w=800&q=80" alt="Perbaikan kebocoran Evaporator" class="w-full h-full object-cover" />
+            </div>
+            
+            <!-- Slide 2 (Latar Foto 1:1 / Square) -->
+            <div class="swiper-slide flex items-center justify-center bg-slate-950">
+              <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1785818959/perbaiki-kulkas_xumjll.jpg?auto=format&fit=crop&w=800&q=80" alt="Perbaikan Kulkas" class="w-full h-full object-cover" />
+            </div>
+            
+            <!-- Slide 3 (Latar Foto 16:9) -->
+            <div class="swiper-slide flex items-center justify-center bg-slate-950">
+              <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782574763/IMG_2247_cj3ypm.jpg?auto=format&fit=crop&w=800&q=80" alt="Isi Freon AC" class="w-full h-full object-cover" />
+            </div>
+
+            <!-- Slide 4 (Foto Potret / Portrait Aspect Ratio) -->
+            <div class="swiper-slide flex items-center justify-center bg-slate-950">
+              <img src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1785812293/cek_indoor_hhhwul.jpg?auto=format&fit=crop&w=800&q=80" alt="Perawatan Rutin" class="w-full h-full object-cover" />
+            </div>
+            
+           <!-- Slide 5 (Latar Foto 4:3) -->
+            <div class="swiper-slide flex items-center justify-center bg-slate-950">
+              <img src=https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782573865/air-conditioner-technician-checking-air-conditioner-operation_pxq5ot.jpg?auto=format&fit=crop&w=800&q=80" alt="Pengecekan Arus dan Tegangan Listrik" class="w-full h-full object-cover" />
+            </div>
+
+           <!-- Slide 6 (Latar Foto 4:3) -->
+            <div class="swiper-slide flex items-center justify-center bg-slate-950">
+              <img src=https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782574783/Screenshot_From_2026-06-27_22-39-09_c630gh.png?auto=format&fit=crop&w=800&q=80" alt="Perbaikan kebocoran Evap" class="w-full h-full object-cover" />
+            </div>
+            
+           <!-- Slide 7 (Latar Foto 4:3) -->
+            <div class="swiper-slide flex items-center justify-center bg-slate-950">
+              <img src=https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782574117/cuci_20AC_oabzzy.jpg?auto=format&fit=crop&w=800&q=80" alt="Perawatan Rutin" class="w-full h-full object-cover" />
+            </div> 
+            
+           <!-- Slide 8 (Latar Foto 4:3) -->
+            <div class="swiper-slide flex items-center justify-center bg-slate-950">
+              <img src=https://res.cloudinary.com/dbnwkc0j0/image/upload/v1782574985/6234647eca283fbf3010ebe4d557a5ac_veiawa.jpg?auto=format&fit=crop&w=800&q=80" alt="Instalasi Unit Baru" class="w-full h-full object-cover" />
+            </div>            
+          </div>
+
+          <!-- Tombol Navigasi Carousel -->
+          <div class="swiper-button-next !text-white !w-10 !h-10 bg-black/40 hover:bg-black/70 backdrop-blur-md rounded-full transition-all"></div>
+          <div class="swiper-button-prev !text-white !w-10 !h-10 bg-black/40 hover:bg-black/70 backdrop-blur-md rounded-full transition-all"></div>
+          
+          <!-- Pagination / Dot Indikator -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. EMBED PLAYLIST YOUTUBE -->
+    <div class="space-y-4">
+      <h3 class="text-xl font-semibold text-slate-800 flex items-center gap-2">
+        <svg class="w-5 h-5 text-red-600" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+        Video Dokumentasi
+      </h3>
+
+      <!-- Container Embed Aspect Ratio 16:9 -->
+      <div class="relative w-full aspect-video rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-black">
+        <iframe 
+          class="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/videoseries?list=PLdW5IQd5URtY&controls=1&modestbranding=1&rel=0&disablekb=0&iv_load_policy=3" 
+          title="Playlist Video Pengerjaan Service AC & Kulkas" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Swiper.js JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </section>
 
     <section id="testimoni" class="py-20 bg-gray-50 px-4">
@@ -169,7 +284,7 @@
                         <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center font-bold text-purple-600 text-sm">H</div>
                         <div>
                             <h4 class="text-sm font-bold text-gray-900">Hendro Wicaksono</h4>
-                            <p class="text-[10px] text-gray-400">Apartemen Medit - Bekasi</p>
+                            <p class="text-[10px] text-gray-400">Apartemen Mediterania - Bekasi</p>
                         </div>
                     </div>
                 </div>
@@ -177,34 +292,51 @@
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-gray-400 pt-12 pb-6 px-4 border-t border-gray-800">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div>
-                <a href="#hero" class="nav-link text-xl font-bold text-white flex items-center gap-2 mb-4">
-                    <i class="fa-solid fa-snowflake text-blue-500"></i> AC-Fixer
-                </a>
-                <p class="text-xs text-gray-400 leading-relaxed">
-                    Kami penyedia solusi perbaikan dan perawatan AC terpercaya khusus wilayah Jabodetabek. Mengutamakan kepuasan pelanggan, transparansi harga, dan ketepatan waktu.
-                </p>
-            </div>
-            <div>
-                <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Tautan Navigasi</h4>
-                <div class="flex flex-col gap-2 text-xs">
-                    <a href="#hero" class="nav-link hover:text-blue-400 transition">Home Utama</a>
-                    <a href="#layanan" class="nav-link hover:text-blue-400 transition">Detail Layanan Jasa</a>
-                    <a href="#testimoni" class="nav-link hover:text-blue-400 transition">Testimoni Pelanggan</a>
+<footer class="bg-gray-900 text-gray-400 pt-12 pb-6 px-4 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+            <!-- Header Brand dengan Logo Lingkaran di Kiri -->
+            <a href="#hero" class="nav-link text-xl font-bold text-white flex items-center gap-3 mb-4 group">
+                
+                <!-- BINGKAI LINGKARAN LOGO -->
+                <div class="w-10 h-10 rounded-full bg-blue-600/10 border border-blue-500/30 flex items-center justify-center overflow-hidden shrink-0 shadow-sm group-hover:border-blue-400 transition-all duration-300">
+              <img 
+        src="https://res.cloudinary.com/dbnwkc0j0/image/upload/v1785813958/logo_j55n8x.jpg" 
+        alt="Logo Covin Service" 
+        class="w-10 h-10 rounded-full animate-spin-slow shrink-0 object-contain"
+    />
+
                 </div>
-            </div>
-            <div>
-                <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Kontak & Area Operasional</h4>
-                <p class="text-xs text-gray-400 mb-2"><i class="fa-solid fa-location-dot text-blue-500 mr-2"></i> Melayani Seluruh Area Jabodetabek</p>
-                <p class="text-xs text-gray-400"><i class="fa-solid fa-clock text-blue-500 mr-2"></i> Senin - Minggu (08:00 - 18:00 WIB)</p>
+
+                <span>Covin Service</span>
+            </a>
+
+            <p class="text-xs text-gray-400 leading-relaxed">
+                Kami penyedia solusi perbaikan dan perawatan AC terpercaya khusus wilayah Jabodetabek. Mengutamakan kepuasan pelanggan, transparansi harga, dan ketepatan waktu.
+            </p>
+        </div>
+        
+        <div>
+            <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Tautan Navigasi</h4>
+            <div class="flex flex-col gap-2 text-xs">
+                <a href="#hero" class="nav-link hover:text-blue-400 transition">Home Utama</a>
+                <a href="#layanan" class="nav-link hover:text-blue-400 transition">Detail Layanan Jasa</a>
+                <a href="#dokumentasi" class="nav-link hover:text-blue-400 transition">Detail Dokumentasi</a>
+                <a href="#testimoni" class="nav-link hover:text-blue-400 transition">Testimoni Pelanggan</a>
             </div>
         </div>
-        <div class="max-w-6xl mx-auto border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
-            <p>&copy; 2026 AC-Fixer. Hak Cipta Dilindungi.</p>
+        
+        <div>
+            <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Kontak & Area Operasional</h4>
+            <p class="text-xs text-gray-400 mb-2"><i class="fa-solid fa-location-dot text-blue-500 mr-2"></i> Melayani Seluruh Area Bekasi</p>
+            <p class="text-xs text-gray-400"><i class="fa-solid fa-clock text-blue-500 mr-2"></i> Senin - Minggu (08:00 - 18:00 WIB)</p>
         </div>
-    </footer>
+    </div>
+    
+    <div class="max-w-6xl mx-auto border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+        <p>&copy; 2026 Covin Service. Hak Cipta Dilindungi.</p>
+    </div>
+</footer>
 
     <a href="https://wa.me/6282125032131?text=Halo%20AC-Fixer,%20saya%20ingin%20konsultasi%20mengenai%20service%20AC" 
        target="_blank"
@@ -268,6 +400,25 @@
                 }
             });
         });
+            // Inisialisasi Swiper Carousel
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      grabCursor: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
     </script>
 </body>
 </html>
